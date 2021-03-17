@@ -1,0 +1,19 @@
+#camera{
+    height: 300px;
+    width: 500px;
+    border: dashed black 2px;
+}
+.Obj_Div{
+    margin: 2px;
+    border: dotted 1px white;
+    display: none;
+    font-weight: bolder;
+    color: burlywood;
+}
+.Accuracy_Div{
+    margin: 2px;
+    border: dashed 1px black;
+    display: none;
+    font-weight: bolder;
+    color: burlywood;
+}

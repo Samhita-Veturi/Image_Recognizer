@@ -1,0 +1,55 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body style="background: fuchsia;color: white;">
+  <div class="container">
+    <center>
+      <h3 class="heading" style="margin-top: 10px;">Image Recognition
+      <hr>
+      </h3>
+      <br><br>
+<p style="font-size: 22px;font-weight: bolder;">Model is trained to identify the following objects:</p>
+<b>
+  Headset
+  <hr>
+  Phone
+  <hr>
+  Bluetooth Headset
+  <hr>
+  Flashlight
+  <hr>
+</b>
+<b style="font-size: large;">Your Webcam:</b>
+<br><br>
+<div id="camera"></div>
+<br>
+<button class="btn btn-outline-info btn-lg" onclick="Take_Snapshot()">Capture Image</button>
+<br><br>
+<button class="btn btn-outline-success btn-lg" onclick="Identify()">Identify Image</button>
+<br><br>
+<div id="result"></div>
+<br><br>
+<h1>Object: <span id="Obj_Div"></span></h1>
+<h1>Accuracy: <span id="Accuracy_Div"></span></h1>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+  </body>
+</html>
+
+ 
